@@ -1,0 +1,266 @@
+/*      STYLING
+font-family: 'Space Mono', monospace;
+font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+color: white;
+color: black;
+
+
+#8259B2 #A059B2 #59A5B2 #5969B2 #6559B2 #59A5B2
+*/
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: black;
+    background-color: #FDFDFD;
+}
+
+.wrap {
+    margin: 10vh auto;
+    height: 40rem;
+    width: 80%;
+}
+
+.wrap:hover {
+    cursor: move;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.nav-container {
+    display: table;
+    min-width: 320px;
+    width: 100%;
+    background-color: #fdfdfd;
+    height: 6rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    
+    overflow: hidden;
+}
+
+.nav-container #nav-bar {
+    min-width: 320px;
+    vertical-align: middle;
+}
+
+.nav-container #nav-bar #logo {
+    float: left;
+    margin-left: 3vh;
+    vertical-align: middle;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(-45deg, #A059B2, #8259B2, #6559B2, #5969B2, #5987B2, #59A5B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-container #nav-bar ul {
+    float: right;
+    margin-right: 3vh;
+}
+
+.nav-container #nav-bar li {
+    text-decoration: none;
+    display: inline;
+    min-width: 320px;
+    transition: 1s ease-in;
+}
+
+
+.nav-container #nav-bar li:hover {
+    text-decoration: underline;
+}
+
+.nav-container #nav-bar h1 {
+    font-size: 3rem;
+}
+
+.nav-container #nav-bar a {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-container #nav-bar a:visited {
+    color: black;
+}
+
+.about-container {
+    top: 0;
+    padding: 0 7vw 5vw 7vw;
+}
+
+.about-container #main-header h1 {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    letter-spacing: 5px;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.about-container #main-header #highlight1 {
+    color: white;
+    background-image: linear-gradient(-225deg, #A059B2, #8259B2, #6559B2, #5969B2, #5987B2, #59A5B2);
+}
+
+.about-container #main-text p {
+    margin-top: 125px;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+
+// CUBE STYLING
+
+.cube,
+.cube * {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+}
+
+.cube {
+    user-select: none;
+}
+
+.cube div a {
+    color: rgba(255,255,255, 0.3);
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 3rem;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    transition: 0.5s ease;
+}
+
+.cube div p {
+    color: rgba(255,255,255, 0.3);
+    top: 100px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    transition: 0.5s ease;
+}
+
+.face {
+    box-sizing: border-box;
+    border: #ffffff solid 0.3em;
+    margin: -8rem;
+    width: 16rem;
+    height: 16rem;
+    text-align: left;
+    backface-visibility: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.face:nth-child(1) {
+    background-color: #B199CC;
+}
+
+.face:nth-child(2) {
+    background-color: #C299CC;
+}
+
+.face:nth-child(3) {
+    background-color: #99B3CC;
+}
+
+.face:nth-child(4) {
+    background-color: #99A2CC;
+}
+
+.face:nth-child(5) {
+    background-color: #A099CC;
+}
+
+.face:nth-child(6) {
+    background-color: #99C4CC;
+}
+
+.cube div img {
+    opacity: 0.025;
+    filter: invert(100%);
+    width: 200px;
+    height: 200px;
+    top: 56px;
+    left: 54px;
+}
+
+.face:hover {
+    cursor: move;
+}
+
+.face a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.face a:visited {
+    color: white;
+}
+
+
+
+/* #hello:hover {
+    background-color: #8259B2;
+}
+
+#resume:hover {
+    background-color: #A059B2;
+}
+
+#contact:hover {
+    background-color: #5987B2;
+}
+
+#projects:hover {
+    background-color: #5969B2;
+}
+
+#about:hover {
+    background-color: #6559B2;
+}
+
+#artwork:hover {
+    background-color: #59A5B2;
+}*/

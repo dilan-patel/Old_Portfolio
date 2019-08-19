@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dilan Patel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cube.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:200,300,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="cube.js"></script>
+</head>
+
+<body onload="init()" data-spy="scroll" data-target=".nav-container" data-offset="50">
+
+    <div class="main-container">
+
+        <div class="nav-container">
+            <div id="nav-bar">
+                <nav>
+                    <a id="logo">Dilan Patel</a>
+                    <!-- <img id='logo' src="assets/images/dilan-logo.png"> -->
+                    <ul>
+                        <li><a href="#about-section">about</a></li>
+                        <li><a href="#resume-section">resume</a></li>
+                        <li><a href="#projects-section">projects</a></li>
+                        <li><a href="#contact-section">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="wrap" id="hello-section">
+            <div class="cube" id="cubo">
+                <div class="face" id="hello">
+                    <a href="javascript:location.reload();">Hello</a>
+                </div>
+                <div class="face" id="resume">
+                    <a href="#resume-section">Resume</a>
+                </div>
+                <div class="face" id="contact">
+                    <a href="#contact-section">Contact</a>
+                </div>
+                <div class="face" id="projects">
+                    <a href="#projects-section">Projects</a>
+                </div>
+                <div class="face" id="about">
+                    <a href="#about-section">About</a>
+                </div>
+                <div class="face" id="artwork">
+                    <a href="#artwork-section">Artwork</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-container" id="about-section">
+            <div id="main-header">
+                <h1>
+                    <span id="highlight2">&nbsp;A creative&nbsp;</span>
+                    <br>
+                    <span id="highlight1">&nbsp;Junior&nbsp;Software&nbsp;Developer&nbsp;</span>
+                    <br>
+                    <span id="highlight2">&nbsp;and&nbsp;</span>
+                    <span id=> </span>
+                    <span id="highlight1">&nbsp;Designer&nbsp;</span>
+                    <br>
+                    <span id="highlight2">&nbsp;from London, UK.&nbsp;</span>
+                </h1>
+            </div>
+            <div id="main-text">
+                <p> Hi there! My name is Dilan Patel. I'm a recent computer science graduate with an interest in
+                    pursuing a career in web design and development. What I love most about web development is that it
+                    brings together logic and creativity when writing code to provide cool functionality with
+                    complementing beautiful web design.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
