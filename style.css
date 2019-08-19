@@ -65,6 +65,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.nav-container #nav-bar #logo:hover {
+  cursor: pointer;
+}
+
 .nav-container #nav-bar ul {
   float: right;
   margin-right: 3vh;
