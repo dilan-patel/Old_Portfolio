@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -26,7 +27,12 @@ body {
 .wrap {
   margin: 10vh auto;
   height: 40rem;
-  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrap:hover {
@@ -38,7 +44,7 @@ body {
   min-width: 320px;
   width: 100%;
   background-color: #fdfdfd;
-  height: 6rem;
+  height: 6vh;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -54,19 +60,24 @@ body {
 }
 
 .nav-container #nav-bar #logo {
+  top: 3px;
   float: left;
   margin-left: 3vh;
   vertical-align: middle;
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 3vh;
   background: -webkit-linear-gradient(-45deg, #A059B2, #8259B2, #6559B2, #5969B2, #5987B2, #59A5B2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-container #nav-bar #logo:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .nav-container #nav-bar ul {
@@ -74,21 +85,18 @@ body {
   margin-right: 3vh;
 }
 
-.nav-container #nav-bar li {
+.nav-container #nav-bar ul li {
   text-decoration: none;
+  font-size: 2vh;
   display: inline;
   min-width: 320px;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
-.nav-container #nav-bar li:hover {
+.nav-container #nav-bar ul li:hover {
   text-decoration: underline;
   color: black;
-}
-
-.nav-container #nav-bar h1 {
-  font-size: 3rem;
 }
 
 .nav-container #nav-bar a {
@@ -97,18 +105,24 @@ body {
   text-decoration: none;
 }
 
+.nav-container #nav-bar a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .nav-container #nav-bar a:visited {
   color: black;
 }
 
 .about-container {
   top: 0;
-  padding: 0 7vw 5vw 7vw;
+  padding: 0 10vw;
 }
 
 .about-container #main-header h1 {
-  font-size: 4.5vw;
-  line-height: 6vw;
+  display: inline-block;
+  font-size: 3em;
+  line-height: 5rem;
   letter-spacing: 5px;
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -120,19 +134,121 @@ body {
 }
 
 .about-container #main-text p {
-  margin-top: 125px;
-  font-size: 3vh;
+  margin-top: 5vh;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 300;
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   color: black;
 }
 
+.wrap-container {
+  margin-top: 8vh;
+  padding: 5vw 9vw;
+}
+
+.project-container {
+  margin-top: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+}
+
+.imagebox {
+  margin: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 45%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.imagebox img {
+  width: 100%;
+}
+
+.imagebox:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.125);
+          transform: scale(1.125);
+}
+
+.header {
+  font-weight: 200;
+  display: inline-block;
+  padding: 0 2vw;
+  font-size: 3em;
+  line-height: 5rem;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+#contact-text {
+  margin-top: 5vh;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 200;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.icon-container {
+  margin-top: 5vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 2rem;
+}
+
+.icon {
+  padding-right: 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+
+.contact-header {
+  font-weight: 200;
+  font-size: 3em;
+  line-height: 5rem;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.contact-header-link {
+  font-size: 3em;
+  line-height: 5rem;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #5987B2;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.contact-header-link:hover {
+  cursor: pointer;
+  color: #222222;
+}
+
 .cube,
 .cube * {
   position: absolute;
-  top: 25vh;
-  left: 50%;
 }
 
 .cube {
@@ -140,6 +256,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  left: 50%;
 }
 
 .cube div a {

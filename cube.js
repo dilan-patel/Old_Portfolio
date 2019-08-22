@@ -120,6 +120,9 @@ function init() {
 	window.addEventListener('mousedown', onMouseDown, false);
 	window.addEventListener('mouseup', onMouseUp, false);
 	window.addEventListener('mousemove', onMouseMove, false);
+	window.addEventListener('ontouchstart', onMouseDown, false);
+	window.addEventListener('ontouchend', onMouseDown, false);
+	window.addEventListener('ontouchmove', onMouseDown, false);
 
 	window.faces = document.querySelectorAll('.face');
 	window.styles = new Array();
