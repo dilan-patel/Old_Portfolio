@@ -1,0 +1,115 @@
+
+.cube,
+.cube * {
+    position: absolute;
+}
+
+.cube {
+    margin-top: 45vh;
+    user-select: none;
+    left: 50%;
+}
+
+.cube div a {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 3rem;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    transition: 0.5s ease;
+}
+
+.cube div p {
+    color: rgba(255, 255, 255, 0.5);
+    top: 100px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    transition: 0.5s ease;
+}
+
+.face {
+    box-sizing: border-box;
+    border: #ffffff solid 0.3em;
+    margin: -8rem;
+    width: 16rem;
+    height: 16rem;
+    text-align: left;
+    backface-visibility: hidden;
+}
+
+.face:nth-child(1) {
+    background-color: #B199CC;  
+}
+
+.face:nth-child(2) {
+    background-color: #C299CC;
+}
+
+.face:nth-child(3) {
+    background-color: #99B3CC;
+}
+
+.face:nth-child(4) {
+    background-color: #99A2CC;
+}
+
+.face:nth-child(5) {
+    background-color: #A099CC;
+}
+
+.face:nth-child(6) {
+    background-color: #99C4CC;
+}
+
+.cube div img {
+    opacity: 0.5;
+    filter: invert(100%);
+    width: 200px;
+    height: 200px;
+    top: 56px;
+    left: 54px;
+}
+
+.face:hover {
+    cursor: move;
+}
+
+.face a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.face a:visited {
+    color: white;
+}
+
+
+/* #hello:hover {
+    background-color: #8259B2;
+}
+
+#resume:hover {
+    background-color: #A059B2;
+}
+
+#contact:hover {
+    background-color: #5987B2;
+}
+
+#projects:hover {
+    background-color: #5969B2;
+}
+
+#about:hover {
+    background-color: #6559B2;
+}
+
+#artwork:hover {
+    background-color: #59A5B2;
+}*/
