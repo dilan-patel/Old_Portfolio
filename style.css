@@ -2,7 +2,8 @@
   -webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html,
+body {
   background-color: #fdfdfd;
   margin: 0;
   height: 100%;
@@ -157,7 +158,6 @@ section {
 }
 
 .imagebox:hover {
-  cursor: pointer;
   -webkit-transform: scale(1.125);
           transform: scale(1.125);
 }
@@ -170,6 +170,44 @@ section {
   line-height: 5rem;
   letter-spacing: 5px;
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+.icon-row {
+  margin-top: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icon-column-1 {
+  -webkit-box-flex: 5%;
+      -ms-flex: 5%;
+          flex: 5%;
+  max-width: 5%;
+  padding: 0 10px;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#icon-purple {
+  padding: 30px;
+  background-color: #a059b2;
+  border: 10px solid #fdfdfd;
+}
+
+#icon-blue {
+  padding: 30px;
+  background-color: #6559b2;
+  border: 10px solid #fdfdfd;
+}
+
+#icon-teal {
+  padding: 30px;
+  background-color: #59a5b2;
+  border: 10px solid #fdfdfd;
 }
 
 #contact-text {
@@ -213,6 +251,10 @@ section {
 
 .header-container {
   padding: 0 7vw;
+}
+
+.contact-header #resume-header {
+  margin-top: 6vh;
 }
 
 .contact-header {

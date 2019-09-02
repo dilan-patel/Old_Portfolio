@@ -2,20 +2,20 @@
     -webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html,
+body {
     background-color: #fdfdfd;
     margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
-}
+body {}
 
 section {
     padding-top: 7vh;
@@ -133,6 +133,7 @@ section {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     color: black;
 }
+
 .project-container {
     margin-top: 7vh;
     margin: 0 auto;
@@ -147,12 +148,15 @@ section {
     transition: 0.3s ease;
 }
 
-.imagebox img{
+.imagebox #project-1 {
+    
+}
+
+.imagebox img {
     width: 100%;
 }
 
 .imagebox:hover {
-    cursor: pointer;
     transform: scale(1.125);
 }
 
@@ -165,6 +169,42 @@ section {
     letter-spacing: 5px;
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
 }
+
+.icon-row {
+    margin-top: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-column-1 {
+    flex: 5%;
+    max-width: 5%;
+    padding: 0 10px;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+#icon-purple {
+    padding: 30px;
+    background-color: #a059b2;
+    border: 10px solid #fdfdfd;
+}
+
+#icon-blue {
+    padding: 30px;
+    background-color: #6559b2;
+    border: 10px solid #fdfdfd;
+}
+
+#icon-teal {
+    padding: 30px;
+    background-color: #59a5b2;
+    border: 10px solid #fdfdfd;
+}
+
 
 #contact-text {
     font-size: 2rem;
@@ -184,6 +224,7 @@ section {
     display: flex;
     margin-left: 4vw;
 }
+
 .icon {
     padding: 0 3rem;
     transition: 0.3s;
@@ -202,8 +243,13 @@ section {
     padding: 0 7vw;
 }
 
+.contact-header #resume-header{
+    margin-top: 6vh;
+}
+
+
 .contact-header {
-    font-weight: 200;   
+    font-weight: 200;
     font-size: 3em;
     line-height: 5rem;
     letter-spacing: 5px;
