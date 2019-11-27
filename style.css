@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: 720px;
+}
+
 section {
   padding-top: 7vh;
   height: 100vh;
@@ -253,8 +257,14 @@ section {
   padding: 0 7vw;
 }
 
-.contact-header #resume-header {
+.resume-header {
   margin-top: 6vh;
+  font-weight: 200;
+  font-size: 3em;
+  line-height: 5rem;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 .contact-header {

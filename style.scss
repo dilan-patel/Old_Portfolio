@@ -15,7 +15,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
+body {
+    min-width: 720px;
+}
 
 section {
     padding-top: 7vh;
@@ -148,10 +150,6 @@ section {
     transition: 0.3s ease;
 }
 
-.imagebox #project-1 {
-    
-}
-
 .imagebox img {
     width: 100%;
 }
@@ -243,8 +241,14 @@ section {
     padding: 0 7vw;
 }
 
-.contact-header #resume-header{
+.resume-header{
     margin-top: 6vh;
+    font-weight: 200;
+    font-size: 3em;
+    line-height: 5rem;
+    letter-spacing: 5px;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    text-decoration: none;
 }
 
 
