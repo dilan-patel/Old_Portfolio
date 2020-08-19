@@ -241,7 +241,7 @@ section {
     padding: 0 7vw;
 }
 
-.resume-header{
+.resume-header {
     margin-top: 6vh;
     font-weight: 200;
     font-size: 3em;
@@ -251,7 +251,7 @@ section {
     text-decoration: none;
 }
 
-.resume-header-link{
+.resume-header-link {
     margin-left: -2vw;
     font-size: 3em;
     line-height: 5rem;
@@ -300,4 +300,42 @@ footer {
     width: 100%;
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     font-weight: 300;
+}
+
+.artwork-row {
+    margin: 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artwork-column {
+    padding: 4px;
+    max-width: 25%;
+    
+}
+
+.artwork-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: ease 0.3s;
+}
+
+.artwork-column img:hover {
+    cursor: pointer;
+    transform: scale(1.6);
+}
+
+@media screen and (max-width: 800px) {
+    .artwork-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .artwork-column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
